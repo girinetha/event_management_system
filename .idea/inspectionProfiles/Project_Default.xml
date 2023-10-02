@@ -1,0 +1,146 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="value" />
+            <item index="1" class="java.lang.String" itemvalue="size" />
+            <item index="2" class="java.lang.String" itemvalue="align" />
+            <item index="3" class="java.lang.String" itemvalue="color" />
+            <item index="4" class="java.lang.String" itemvalue="static" />
+            <item index="5" class="java.lang.String" itemvalue="request.get.query" />
+            <item index="6" class="java.lang.String" itemvalue="img_responsive" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="9">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="br" />
+            <item index="7" class="java.lang.String" itemvalue="div" />
+            <item index="8" class="java.lang.String" itemvalue="a" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="W292" />
+          <option value="E501" />
+          <option value="W391" />
+          <option value="E722" />
+          <option value="W601" />
+          <option value="E261" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="id" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="django.db.models.fields.CharField.__add__" />
+          <option value="dailywalkins.dailywalkinsapp.views.dailywalkinsapp" />
+          <option value="homecleaning.homecleaningapp.views.homecleaningapp" />
+          <option value="homecleaning.homecleaningapp.views.*" />
+          <option value="homecleaning.homecleaning.urls.homecleaningapp" />
+          <option value="django.placementapp" />
+          <option value="Note_Taking_Application.blog.models.Post.objects" />
+          <option value="PIL.Image" />
+          <option value="cause.studentapp.urls" />
+          <option value="employeeapp.models.Testcase.objects" />
+          <option value="cause.studentapp.views.staff_name" />
+          <option value="customerapp.models.Book_slot.objects" />
+          <option value="studentapp.models.Project.objects" />
+          <option value="tensorflow.keras" />
+          <option value="groundapp.models.Customer.objects" />
+          <option value="ownerapp.models.Add_Ground.objects" />
+          <option value="gymfinder.consulting.consultingapp.views.customer.objects" />
+          <option value="logistics.logapp.views.book.is_valid" />
+          <option value="logistics.logapp.views.book.save" />
+          <option value="vegetables.vegetables.vegetables.urls.vegefood" />
+          <option value="vegefood.models.Vregister.objects" />
+          <option value="vegefood.models.Addproducts.objects" />
+          <option value="vegefood.models.Cregister.objects" />
+          <option value="logapp.models.Customer.objects" />
+          <option value="logapp.models.Mechanic.objects" />
+          <option value="logapp.models.Book.objects" />
+          <option value="trackingapp.models.Adddelivery.objects" />
+          <option value="trackingapp.models.Customer.objects" />
+          <option value="logapp.views.book.is_valid" />
+          <option value="logapp.views.book.save" />
+          <option value="logapp.models.Review.objects" />
+          <option value="logapp.models.Customer.object" />
+          <option value="bloodbankmanagementmaster.patient.models.Patient.objects" />
+          <option value="django.db.models.fields.related.OneToOneField.first_name" />
+          <option value="django.db.models.fields.related.OneToOneField.last_name" />
+          <option value="investerapp.models.Invester.objects" />
+          <option value="ideameker.models.Addidea.objects" />
+          <option value="django.shortcuts.reverse" />
+          <option value="instituteapp.models.Customer.objects" />
+          <option value="instituteapp.models.Apply.objects" />
+          <option value="instituteapp.models.Institute.objects" />
+          <option value="patient.models.Patient.objects" />
+          <option value="blood.models.BloodRequest.objects" />
+          <option value="donor.models.BloodDonate.objects" />
+          <option value="blood.models.Stock.objects" />
+          <option value="donor.models.Donor.objects" />
+          <option value="supervisor.models.Cargo_details.objects" />
+          <option value="rest.listview.listapp.models.Todo.objects" />
+          <option value="django.conf.urls.url" />
+          <option value="rest.listview.listapp.models.Todo.DoesNotExist" />
+          <option value="adminapp.models.Admin.objects" />
+          <option value="adminapp.models.Add_Magazine.objects" />
+          <option value="customerapp.models.Customer.objects" />
+          <option value="customerapp.models.Liked.objects" />
+          <option value="customerapp.models.Comments.objects" />
+          <option value="customerapp.models.Add_Feedback.objects" />
+          <option value="customerapp.models.Reply.objects" />
+          <option value="adminapp.views.login" />
+          <option value="employerapp.models.Employee.objects" />
+          <option value="employerapp.models.Add_Project.is_valid" />
+          <option value="employerapp.models.Add_Project.errors" />
+          <option value="adminapp.models.Add_Project.is_valid" />
+          <option value="adminapp.models.Add_Project.objects" />
+          <option value="adminapp.models.Assign_Employee.objects" />
+          <option value="adminapp.models.Add_task.objects" />
+          <option value="adminapp.models.Task.objects" />
+          <option value="customerapp.forms.CommentsForm.id" />
+          <option value="adminapp.forms.ContactForm.save" />
+          <option value="app.models.Video.objects" />
+          <option value="adminsapp.models.Employee.objects" />
+          <option value="vegefood.models.Book.objects" />
+          <option value="sklearn.preprocessing.SimpleImputer" />
+          <option value="diner.models.Register.objects" />
+          <option value="diner.models.Admin_login.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

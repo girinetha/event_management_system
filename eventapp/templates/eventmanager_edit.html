@@ -1,0 +1,84 @@
+{% load static %}
+{% include 'eventmanager_header.html' %}
+	<div id="home">
+		<!-- background image -->
+		<div class="section-bg" style="background-image:url({% static './img/background01.jpg' %})" data-stellar-background-ratio="0.1"></div>
+		<!-- /background image -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- home content -->
+					<div class="col-md-8 col-md-offset-2">
+						<div class="home-content">
+							<h1>Eventmanager_edit</h1>
+						</div>
+					</div>
+					<!-- /home content -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /home wrapper -->
+	</div>
+	<!-- /Home -->
+
+<br>
+<form method ="POST" class="post-form" action="{% url 'manager_update' %}">
+    {% csrf_token %}
+    <div class="container h-100">
+        <h1 class="fs-4 card-title fw-bold mb-4">Update Here</h1>
+
+                    <input id="id" type="hidden"  name="id" value="{{eventmanager.id}}" required autofocus>
+
+        <div class="mb-3">
+            <div class="mb-2 w-100">
+                <label class="mb-2 text-muted" for="title">Title</label>
+            </div>
+            <input id="title" type="text"  name="title" value="{{eventmanager.title}}" required autofocus>
+        </div>
+        <br>
+        <div class="mb-3">
+            <div class="mb-2 w-100">
+            </div>
+            <input id="password" type="hidden"  name="password" value="{{eventmanager.password}}" required>
+        </div>
+        <br>
+        <div class="mb-3">
+            <div class="mb-2 w-100">
+                <label class="mb-2 text-muted" for="email">Email</label>
+            </div>
+            <input id="email" type="text"  name="email" value="{{eventmanager.email}}" required autofocus>
+        </div>
+        <br>
+        <div class="mb-3">
+            <div class="mb-2 w-100">
+                <label class="text-muted" for="address">Address</label>
+            </div>
+            <input id="address" type="text"  name="address" value="{{eventmanager.address}}" required>
+        </div>
+        <div class="mb-3">
+            <div class="mb-2 w-100">
+                <label class="text" for="mobile">Mobile</label>
+            </div>
+            <input id="mobile" type="number" name="mobile" value="{{eventmanager.mobile}}" required>
+        </div>
+        <div class="mb-3">
+            <div class="mb-2 w-100">
+                <label class="text" for="city">City</label>
+            </div>
+            <select value="{{eventmanager.city}}" name="city">
+                <option value="Hyd">Hyd</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+        </div><br>
+        <br>
+        <button type="submit" class="btn btn-primary ms-auto">submit</button><br>
+    </div>
+</form>
+{% include 'footer.html' %}

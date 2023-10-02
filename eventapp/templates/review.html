@@ -1,0 +1,66 @@
+{% load static %}
+{% include 'customer_header.html' %}
+
+	<div id="home">
+		<!-- background image -->
+		<div class="section-bg" style="background-image:url({% static './img/background01.jpg' %})" data-stellar-background-ratio="0.1"></div>
+		<!-- /background image -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- home content -->
+					<div class="col-md-8 col-md-offset-2">
+						<div class="home-content">
+							<h1>Review</h1>
+						</div>
+					</div>
+					<!-- /home content -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /home wrapper -->
+	</div>
+	<!-- /Home -->
+<form method ="POST" class="post-form" action="">
+    {% csrf_token %}
+	<h1 class="fs-4 card-title fw-bold mb-4">Review now</h1>
+
+		<label class="mb-2 text-muted">Customer_Email</label>
+		<input type="text" class="form-control" name="customer" value="{{email}}" required autofocus>
+	</div>
+	<div class="mb-3">
+		<label class="mb-2 text-muted">Event_id</label>
+		<input type="text" class="form-control" name="addevent" value="{{id}}" required autofocus>
+	</div>
+	<div class="mb-3">
+		<label class="mb-2 text-muted" for="description">Description</label>
+		<input id="description" type="text" class="form-control" name="description" required autofocus>
+	</div>
+	<div class="mb-3">
+		<div class="mb-2 w-100">
+       <label class="mb-2 text-muted" >Title</label>
+		<input id="title" type="text" class="form-control" name="title" value="{{title}}" required autofocus>
+		</div>
+	</div>
+	<div class="mb-3">
+		<div class="mb-2 w-100">
+			<label class="text" for="rating">Rating</label>
+		</div>
+		<input id="rating" type="number" class="form-control" name="rating" required>
+	</div>
+	<div class="mb-3">
+		<div class="mb-2 w-100">
+			<label class="text" for="review">Review</label>
+		</div>
+		<input id="review" type="text" class="form-control" name="review" required>
+	</div>
+	<button type="submit" class="btn btn-primary ms-auto">submit</button><br>
+</form>
+{{msg}}
+{% include 'footer.html' %}

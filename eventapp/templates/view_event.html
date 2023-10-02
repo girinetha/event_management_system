@@ -1,0 +1,62 @@
+{% load static %}
+{% include 'eventmanager_header.html' %}
+	<div id="home">
+		<!-- background image -->
+		<div class="section-bg" style="background-image:url({% static './img/background01.jpg' %})" data-stellar-background-ratio="0.1"></div>
+		<!-- /background image -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- home content -->
+					<div class="col-md-8 col-md-offset-2">
+						<div class="home-content">
+							<h1>View_event</h1>
+						</div>
+					</div>
+					<!-- /home content -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /home wrapper -->
+	</div>
+	<!-- /Home -->
+
+<br>
+<table align="center" border="2" cellpadding="10" cellspacing="0" width="80%">
+	<thead>
+	<tr>
+		<th>Id</th>
+		<th>Title</th>
+		<th>Description</th>
+		<th>Venue</th>
+		<th>Venueaddress</th>
+		<th>Contact Number</th>
+		<th>Entryfee</th>
+		<th>Image</th>
+	</tr>
+    </thead>
+	<tbody>
+	{% for addevent in addevent  %}
+	<tr>
+		<td>{{addevent.id}}</td>
+		<td>{{addevent.title}}</td>
+		<td>{{addevent.description}}</td>
+		<td>{{addevent.venue}}</td>
+		<td>{{addevent.venueaddress}}</td>
+		<td>{{addevent.contactnumber}}</td>
+		<td>{{addevent.entryfee}}</td>
+		<td><img src="{{addevent.image.url}}" class="img-responsive" width="50%" height="30%"/>
+		<td><a href="/book/{{addevent.id}}">Book</a></td>
+		<td><a href="/review/{{addevent.id}}">Review</a></td>
+
+	</tr>
+	{% endfor %}
+	</tbody>
+</table><br>
+{% include 'footer.html' %}

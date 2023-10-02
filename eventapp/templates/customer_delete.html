@@ -1,0 +1,41 @@
+{% load static %}
+{% include 'customer_header.html' %}
+<div id="home">
+    <!-- background image -->
+    <div class="section-bg" style="background-image:url({% static './img/background01.jpg' %})" data-stellar-background-ratio="0.1"></div>
+    <!-- /background image -->
+
+    <!-- home wrapper -->
+    <div class="home-wrapper">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- home content -->
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="home-content">
+                        <h1>Delete Customer</h1>
+                    </div>
+                </div>
+                <!-- /home content -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /home wrapper -->
+</div>
+<!-- /Home -->
+
+<br>
+<form method="POST" class="post-form" action="{% url 'customer_delete' id %}">
+    {% csrf_token %}
+    <div class="container h-100">
+        <h1 class="fs-4 card-title fw-bold mb-4">Confirm Deletion</h1>
+        <p>Are you sure you want to delete the customer with ID: {{ customer.id }}?</p>
+        
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a href="{% url 'customer_display' %}" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+{% include 'footer.html' %}

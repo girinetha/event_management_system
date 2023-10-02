@@ -1,0 +1,69 @@
+{% load static %}
+{% include 'customer_header.html' %}
+	<div id="home">
+		<!-- background image -->
+		<div class="section-bg" style="background-image:url({% static './img/background01.jpg' %})" data-stellar-background-ratio="0.1"></div>
+		<!-- /background image -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<!-- home content -->
+					<div class="col-md-8 col-md-offset-2">
+						<div class="home-content">
+							<h1>view_Review</h1>
+						</div>
+					</div>
+					<!-- /home content -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /home wrapper -->
+	</div>
+	<!-- /Home -->
+
+<div id="page-wrapper" class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-wrapper-content">
+					<h1>View_Review</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<table align="center" border="2" cellpadding="10" cellspacing="0" width="80%">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>EVENT_ID</th>
+		<th>CUSTOMER_EMAIL</th>
+		<th>DESCRIPTION</th>
+		<th>TITLE</th>
+		<th>RATING</th>
+		<th>REVIEW</th>
+
+	</tr>
+    </thead>
+	<tbody>
+	{% for review in review  %}
+	<tr>
+		<td>{{review.id}}</td>
+		<td>{{review.addevent.id}}</td>
+		<td>{{review.customer.email}}</td>
+		<td>{{review.description}}</td>
+		<td>{{review.addevent.title}}</td>
+		<td>{{review.rating}}</td>
+		<td>{{review.review}}</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table><br>
+{% include 'footer.html' %}

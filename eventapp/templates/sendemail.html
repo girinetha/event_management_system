@@ -1,0 +1,43 @@
+{% load static %}
+{% include 'eventmanager_header.html' %}
+<div id="home">
+    <div class="section-bg" style="background-image:url({% static './img/background01.jpg' %})" data-stellar-background-ratio="0.1">
+
+    </div>
+    <h1>Send email:</h1>
+
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="home-content">
+                        <h1>Send email</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<form action="{% url 'sendemail' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Send emails</button>
+</form>
+
+
+    <!-- <form action="" method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" placeholder="enter your name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="enter your email" name="email">
+        <br>
+        <label for="msg">Message:</label>
+        <input type="text" placeholder="enter your message" name="msg">
+
+        <input type="submit" value="Submit">
+    </form> -->
+{{msg}}
+{% include 'footer.html' %}
