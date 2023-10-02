@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%_qwtw^rv=l-#+2jrd!fp+t@ujju5h3%^8vbzcm@l9ytna&n14
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'event.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'event_managing_system',
+        'NAME':'event',
         'USER':'root',
-        'PASSWORD':'9696',
-        'HOST':'localhost',
+        'PASSWORD':'96969696',
+        'HOST':'event.cacsm2bpqtbi.eu-north-1.rds.amazonaws.com',
         'PORT':'3306',
     }
 }
